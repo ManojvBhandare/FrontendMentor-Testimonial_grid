@@ -1,0 +1,21 @@
+@use 'reset';
+@use 'variables' as v;
+@use 'breakpoint';
+@use 'card';
+@use 'colors';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    font-family: v.$ff;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  html {
+    font-size: 13px;
+  }
+
+

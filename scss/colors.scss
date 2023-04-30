@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+
+$colors:(
+    "violet": v.$primary1,
+    "g-blue": v.$primary2,
+    "b-blue":v.$primary3,
+    "white":v.$primary4,
+    "light-gray":v.$neutral1,
+    "grayish-blue":v.$neutral2,
+    "black": black
+
+);
+
+@each $key, $val in $colors{
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    .text-#{$key} {
+        color: $val;
+    }
+}
