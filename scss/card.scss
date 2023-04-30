@@ -69,7 +69,7 @@
     }
     .role{
         font-weight: 500;
-      font-size: 0.9rem;
+      font-size: .9rem;
       opacity: 50%;
     }
 
@@ -79,10 +79,13 @@
    .comment{
     font-weight: v.$fw-6;
     font-size: 1.5rem;
+    
 }
 
 .quote{
     opacity: 70%;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
 }
@@ -90,5 +93,8 @@
 .with-svg{
     background-image: url(/images/bg-pattern-quotation.svg);
  background-repeat: no-repeat;
- background-position: 19em top;       
+ background-position: 19em top;   
+ @include lg{
+    background-position: 30rem top;
+ }    
 }

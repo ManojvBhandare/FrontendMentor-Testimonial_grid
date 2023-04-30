@@ -141,12 +141,19 @@ select {
 }
 .testimonial .quote {
   opacity: 70%;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .with-svg {
   background-image: url(/images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 19em top;
+}
+@media (min-width: 500px) {
+  .with-svg {
+    background-position: 30rem top;
+  }
 }
 
 .bg-violet {
