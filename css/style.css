@@ -73,13 +73,12 @@ select {
   }
 }
 .testimonial-grid {
-  width: clamp(375px, 80%, 1440px);
+  width: clamp(375px, 80%, 1110px);
   display: grid;
   align-items: center;
-  justify-content: center;
-  gap: 1.75rem;
-  margin: 2rem 0;
-  grid-template-areas: "a" "b" "c" "d" "e";
+  justify-items: center;
+  gap: 1.75em;
+  margin: 2em 0;
 }
 .testimonial-grid :nth-child(1) {
   grid-area: a;
@@ -101,20 +100,20 @@ select {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a a b e" "c d d e";
   }
-  .testimonial-grid .testimonial {
+  .testimonial-grid .card {
     width: auto;
   }
 }
 
 .testimonial {
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  gap: 1em;
+  padding: 1.5em;
   position: relative;
-  width: 375px;
+  width: max(327px, 80%);
   height: 100%;
-  border-radius: 10px;
-  gap: 1.5rem;
 }
 @media (min-width: 500px) {
   .testimonial {
@@ -122,9 +121,12 @@ select {
   }
 }
 .testimonial .identity {
-  display: flex;
   align-items: center;
-  gap: 1.2em;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 3;
+  display: flex;
+  gap: 1em;
 }
 .testimonial .identity img {
   border-radius: 3rem;
@@ -136,13 +138,13 @@ select {
   opacity: 50%;
 }
 .testimonial .comment {
+  line-height: 1.25em;
   font-weight: 600;
   font-size: 1.5rem;
 }
 .testimonial .quote {
   opacity: 70%;
-  line-height: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .with-svg {
@@ -152,7 +154,7 @@ select {
 }
 @media (min-width: 500px) {
   .with-svg {
-    background-position: 30rem top;
+    background-position: 28rem top;
   }
 }
 
@@ -217,6 +219,8 @@ body {
   background-color: hsl(210, 46%, 95%);
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 html {
